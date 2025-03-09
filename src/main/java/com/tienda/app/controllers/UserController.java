@@ -76,7 +76,7 @@ public class UserController {
     @PostMapping("/check-token")
     public ResponseEntity<Boolean> checkToken(@RequestBody CheckTokenRequest checkTokenRequest) {
         return ResponseEntity.ok(this.userService.checkToken(checkTokenRequest));
-    }
+    }
 
 }
 
